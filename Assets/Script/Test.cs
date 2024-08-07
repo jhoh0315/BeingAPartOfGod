@@ -4,20 +4,17 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Rigidbody rigid;
     void Start()
     {
-        
+        rigid = GetComponent<Rigidbody>();
     }
-    bool a = true;
 
-    // Update is called once per frame
     void Update()
     {
-//        if (a){TestCode();a = false;}
+        print(rigid.velocity);
     }
     public void TestCode()
     {
-        SoundManager.instance.PlaySound2D("Test");
     }
 }
