@@ -7,7 +7,6 @@ public class AimSpeedControl : MonoBehaviour
     public float maxx = 1;
     public float minx = -1;
     public Transform SetValue;
-    public float AimValue;
     public float MaxValue = 100;
     public bool doUpdate = false;
     public Transform centerTransform;

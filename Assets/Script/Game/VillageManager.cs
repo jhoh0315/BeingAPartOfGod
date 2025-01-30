@@ -8,6 +8,7 @@ public class VillageManager : MonoBehaviour
     public static VillageManager instance;
     public int nowStep = 0;
     public GameObject Guide;
+    public GameObject SceneLoadTrigger;
     [SerializeField] public Material[] GuideMaterial;
     [SerializeField] public bool[] questCheck;
     // Start is called before the first frame update
@@ -21,6 +22,14 @@ public class VillageManager : MonoBehaviour
         else
         {
             Destroy(instance);
+        }
+    }
+
+    private void Update()
+    {
+        if (nowStep == 4)
+        {
+            SceneLoadTrigger.SetActive(true);
         }
     }
 

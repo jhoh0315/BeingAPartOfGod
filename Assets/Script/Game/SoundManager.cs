@@ -31,7 +31,7 @@ public class SoundManager : MonoBehaviour
         }
         else
         {
-            Destroy(instance);
+            Destroy(gameObject);
         }
     }
 
@@ -76,6 +76,7 @@ public class SoundManager : MonoBehaviour
     public void PlaySound2D(string clipName, float delay = 0f, bool isLoop = false, SoundType type = SoundType.EFFECT)
     {
         GameObject obj = new GameObject("TemporarySoundPlayer 2D");
+        DontDestroyOnLoad(obj);
         TemporarySoundPlayer soundPlayer = obj.AddComponent<TemporarySoundPlayer>();
 
         if (isLoop) { AddToList(soundPlayer); }

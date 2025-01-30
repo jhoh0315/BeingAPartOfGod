@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.Rendering.VirtualTexturing.Debugging;
 
 public class LockPickMain : MonoBehaviour
 {
@@ -16,6 +15,8 @@ public class LockPickMain : MonoBehaviour
     public LockPickBlockMove box2;
     public LockPickBlockMove box3;
     public LockPickBlockMove box4;
+
+    public GameObject MainObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,7 @@ public class LockPickMain : MonoBehaviour
         if (LockPickClearCheck())
         {
             door.isopen = true;
+            MainObject.SetActive(false);
         }
 
     }

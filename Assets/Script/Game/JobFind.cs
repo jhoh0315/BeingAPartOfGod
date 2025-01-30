@@ -10,6 +10,7 @@ public class JobFind : MonoBehaviour
     public AudioSource AudioSource2;
     public int jobnum;
     public Collider[] wall;
+    public GameObject NPC;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +45,7 @@ public class JobFind : MonoBehaviour
 
     private IEnumerator playSound()
     {
+        NPC.SetActive(true);
         AudioSource1.Play();
         AudioSource2.Play();
         yield return new WaitForSeconds(AudioSource1.clip.length>AudioSource2.clip.length?AudioSource1.clip.length:AudioSource2.clip.length);

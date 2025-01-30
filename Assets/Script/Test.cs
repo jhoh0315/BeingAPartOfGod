@@ -1,20 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Test : MonoBehaviour
 {
-    Rigidbody rigid;
-    void Start()
-    {
-        rigid = GetComponent<Rigidbody>();
-    }
 
-    void Update()
+    public float speed;
+    private void Start()
     {
-        print(rigid.velocity);
+        Screen.brightness = 0;
     }
-    public void TestCode()
+    private void Update()
     {
+        Screen.brightness = speed;
+        Debug.Log(Screen.brightness);
     }
 }

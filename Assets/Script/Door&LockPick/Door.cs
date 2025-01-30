@@ -34,4 +34,9 @@ public class Door : MonoBehaviour
     {
         TargetTransform.transform.position = Handle.transform.position;
     }
+
+    public void SetIsOpen(bool tmp)
+    {
+        isopen = tmp;
+    }
 }

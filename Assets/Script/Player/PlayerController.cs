@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 3;
     public float runspeed = 5;
     public float smoothValue = 0.1f;
+    public AudioSource walkingAudio;
 
     private bool isPlayingWalkSound = false;
 
@@ -52,12 +53,12 @@ public class PlayerController : MonoBehaviour
 
         if (PinchPosition.x != 0 && PinchPosition.y != 0 && !isPlayingWalkSound)
         {
-            SoundManager.instance.PlaySound3D("walk_on_ground", center, 0, true);
+            walkingAudio.Play();
             isPlayingWalkSound = true;
         }
         if (PinchPosition.x == 0 && PinchPosition.y == 0 && isPlayingWalkSound)
         {
-            SoundManager.instance.StopLoopSound("walk_on_ground");
+            walkingAudio.Stop();
             isPlayingWalkSound = false;
         }
     }
