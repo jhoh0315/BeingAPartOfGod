@@ -6,11 +6,32 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/starting room.unity
+    path: Assets/Scenes/LoadScenes/starting room.unity
     guid: 9a70af073d1fa4292bc46c46612209d0
   - enabled: 1
-    path: Assets/Scenes/Village.unity
+    path: Assets/Scenes/LoadScenes/CarScene.unity
+    guid: b93bec9cf55200b48836b54092a77386
+  - enabled: 1
+    path: Assets/Scenes/LoadScenes/island.unity
+    guid: d755f9f36f2182e4f80fe2d938ba4035
+  - enabled: 1
+    path: Assets/Scenes/LoadScenes/jail & hospital.unity
+    guid: 9257440b6d28740d2a8d3a45dae3171e
+  - enabled: 1
+    path: Assets/Scenes/LoadScenes/jailStoryScene.unity
+    guid: b79dd0f516240af419e3d76287cc532f
+  - enabled: 1
+    path: Assets/Scenes/LoadScenes/Village1.unity
+    guid: dac8d810e5d611e429e34eb01a6d08d9
+  - enabled: 1
+    path: Assets/Scenes/LoadScenes/Village2.unity
     guid: 728bad6d968bf2548a95ecf8cf5b987e
+  - enabled: 1
+    path: Assets/Scenes/LoadScenes/VillageStory.unity
+    guid: 5ee03915dd8af6a4d847d740686192a0
+  - enabled: 1
+    path: Assets/Scenes/LoadScenes/Ending.unity
+    guid: a7f62151427b145478a214c6115b61ce
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 41e9186542f63dc4a837e9239c16eb82, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 86c13bdafa2f549428603bedb442b19e, type: 2}
